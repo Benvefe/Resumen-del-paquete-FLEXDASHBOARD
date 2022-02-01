@@ -1,0 +1,49 @@
+---
+title: "RESUMEN DEL PAQUETE FLEXDASHBOARD"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: scroll #deslizamiento, sin barra o con barra
+---
+Como es la estructura de un Flexdashboard
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+# Capa 1
+
+## Pestañas {.tabset}
+### tab1
+### tab2
+### tab3
+
+# Capa 2
+
+Pestañas con transicion difuminada 
+## Pestañas {.tabset .tabset-fade}  
+### tab1
+### tab2
+### tab3
+
+```{r}
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
